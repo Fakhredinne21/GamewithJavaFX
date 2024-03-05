@@ -1,34 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e98790f1-0005-4dc0-b347-e049634d7acf" name="Changes" comment="" />
+    <list default="true" id="e98790f1-0005-4dc0-b347-e049634d7acf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/AppPuissance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/AppPuissance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Controlleur/Controlleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Controlleur/Controlleur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/AppPuissance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Coup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Coup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/CoupException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/CoupException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/CritereSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/CritereSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/GestionJoueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/GestionJoueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/ModelJeuPuissance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/ModelJeuPuissance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Partie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Partie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Model/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Vue/InterfaceJeuPuissance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fakhredinne/puissanceapp/Vue/InterfaceJeuPuissance.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2dBAl1DJqBqFVr8PksbVro9iRmW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AppPuissance.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/FAKHREDINNE/IdeaProjects/PuissanceAPP/src/main/java/fakhredinne/puissanceapp/Model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FAKHREDINNE\IdeaProjects\PuissanceAPP\src\main\java\fakhredinne\puissanceapp\Model" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,11 +84,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709471246956</updated>
-      <workItem from="1709471248023" duration="1000" />
+      <workItem from="1709471248023" duration="1584000" />
+      <workItem from="1709472870900" duration="21000" />
+      <workItem from="1709472922441" duration="1632000" />
+      <workItem from="1709477581133" duration="1152000" />
+      <workItem from="1709552256753" duration="6000" />
+      <workItem from="1709640149201" duration="9071000" />
+      <workItem from="1709674112215" duration="4045000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

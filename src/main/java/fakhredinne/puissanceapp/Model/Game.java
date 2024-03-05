@@ -1,4 +1,4 @@
-package app;
+package fakhredinne.puissanceapp.Model;
 
 
 
@@ -37,13 +37,6 @@ public class Game {
 		return estGagnant(posL, posC, idJoueur);
 
 	}
-
-	public boolean setCoup(Position pos, int idJoueur) {
-		grille[pos.getPosLigne()][pos.getPosColonne()] = idJoueur;
-		return estGagnant(pos, idJoueur);
-
-	}
-
 	public boolean estGagnant(int posL, int posC, int idJoueur) {
 		boolean fin = false;
 		Position pos = new Position(posL, posC);
@@ -51,11 +44,7 @@ public class Game {
 		return fin;
 	}
 
-	public boolean estGagnant(Position pos, int idJoueur) {
-		boolean fin = false;
-		fin = alignementH(pos, idJoueur) || alignementV(pos, idJoueur) || alignementD(pos, idJoueur);
-		return fin;
-	}
+
 
 	private boolean alignementD(Position pos, int idJoueur) {
 		int k = 0;
@@ -128,40 +117,13 @@ public class Game {
 	public int getLigneVideByColonne(int numColonne) throws CoupException {
 		int numLigne = 0;
 		if(numColonne>7)
-			throw new CoupException("Numéro de la colonne est incorrect");
+			throw new CoupException("Numï¿½ro de la colonne est incorrect");
 		while (numLigne < 6 && !estPositionVide(numLigne, numColonne))
 			numLigne++;
 		if(numLigne==6) 
 			throw new CoupException(new Position(numLigne,numColonne));
 		return numLigne;
 	}
-
-	public void initialiseGrille() {
-		for (int i = 0; i < nbLigne; i++)
-			for (int j = 0; j < nbColonne; j++)
-				grille[i][j] = 0;
-	}
-
-	public String toString() {
-		String ch = "";
-		for (int i = nbLigne - 1; i >= 0; i--) {
-			ch = ch + (i + 1) + " ";
-			for (int j = 0; j < nbColonne; j++) {
-				String car = "-";
-				if (grille[i][j] == idJ1)
-					car = "+";
-				else if (grille[i][j] == idJ2)
-					car = "*";
-				ch = ch + "| " + car;
-			}
-			ch = ch + "|\n";
-		}
-		ch = ch + "  ";
-		for (int j = 0; j < nbColonne; j++)
-			ch = ch + "| " + (j + 1);
-		return ch;
-	}
-
 
 	////
 	public int getIdJ1() {

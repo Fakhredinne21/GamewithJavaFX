@@ -1,4 +1,4 @@
-package app;
+package fakhredinne.puissanceapp.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,69 +29,6 @@ public class Partie {
 		game = new Game(j1.getId(), j2.getId());
 	}
 
-	//
-	public void lancerPartie() {
-		boolean fin = false;
-		while (!fin) {
-			try {
-				Position coup = coupJoueur();
-				if (this.game.estGagnant(coup.getPosLigne(), coup.getPosColonne(), rolejoueur)) {
-					gagnant();
-					fin = true;
-				} else if (this.game.estRemplie()) {
-					partieNull();
-					fin = true;
-				}
-				modifieRole();
-			} catch (CoupException e) {
-				System.out.print(e.getMessage());
-			}
-		}
-
-	}
-
-	private Position coupJoueur() throws CoupException {
-		System.out.print("\nJoueur : " + this.getJoueurCourant().getNom() + "\n");
-		int numColonne = getJoueurCourant().ChoisierCoup();
-		int numLigne = game.getLigneVideByColonne(numColonne);
-		if (numLigne == -1)
-			return new Position(-1, numColonne);
-		this.game.setCoup(numLigne, numColonne, rolejoueur);
-		System.out.print(game);
-		return new Position(numLigne, numColonne);
-	}
-
-	private void partieNull() {
-		System.out
-				.print("\n" + "La partie est null entre le joueur : " + j1.getNom() + " et le joueur: " + j2.getNom());
-	}
-
-	private void gagnant() {
-		if (getRolejoueur() == j1.getId()) {
-			System.out.print("\n" + "Gagnant : " + j1.getNom());
-			j1.incrementerScore();
-			j2.decrementerScore();
-		} else {
-			System.out.print("\n" + "Gagnant : " + j2.getNom());
-			j2.incrementerScore();
-			j1.decrementerScore();
-		}
-	}
-
-	
-	public Joueur getJoueurCourant() {
-		if (this.rolejoueur == this.j1.getId())
-			return j1;
-		else
-			return j2;
-	}
-
-	public void modifieRole() {
-		if (this.rolejoueur == this.j1.getId())
-			this.rolejoueur = this.j2.getId();
-		else
-			this.rolejoueur = this.j1.getId();
-	}
 
 	public void insertCoup(int jj) {
 		if (this.rolejoueur == this.j1.getId()) {
@@ -105,10 +42,8 @@ public class Partie {
 			nbJetonJ1--;
 		}
 	}
-///////////////////////
-	private int getRolejoueur() {
-		return this.rolejoueur;
-	}
+
+
 
 	public int getScoreJ2() {
 		return scorej2;

@@ -1,4 +1,4 @@
-package app;
+package fakhredinne.puissanceapp.Model;
 
 public class CoupException extends Exception {
 	String msg;

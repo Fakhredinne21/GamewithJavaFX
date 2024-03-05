@@ -1,4 +1,4 @@
-package app;
+package fakhredinne.puissanceapp.Model;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -59,7 +59,7 @@ public class GestionJoueur {
 	}
 	public List<Joueur> listFiltreByNomScore(String nomRecherche,int scoreMin){ 
 		List<Joueur> resultat;
-		resultat=AppPuissance.verifierSi(this.list,j ->{
+		resultat=verifierSi(this.list,j ->{
 			Joueur jj=(Joueur)j;
 			if(jj.getNom().contains(nomRecherche) && 
 			  jj.getScore() > scoreMin)
@@ -67,6 +67,14 @@ public class GestionJoueur {
 			return false;
 		  });		
 		return resultat;
+	}public static <T> List<T> verifierSi(List<T> source, CritereSelection<T> critere) {
+		List<T> l = new ArrayList<>();
+		for (int i = 0; i < source.size(); i++) {
+			if (critere.verifier(source.get(i))) {
+				l.add(source.get(i));
+			}
+		}
+		return l;
 	}
 	
 	//Getter et setter

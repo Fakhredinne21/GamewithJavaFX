@@ -1,4 +1,4 @@
-package app;
+package fakhredinne.puissanceapp.Model;
 
 import java.util.Scanner;
 
