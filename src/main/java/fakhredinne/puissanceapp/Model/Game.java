@@ -13,6 +13,10 @@ public class Game {
 		this.idJ2 = idJ2;
 		grille = new int[nbLigne][nbColonne];
 	}
+	public void clean_grille(){
+
+		grille = new int[nbLigne][nbColonne];
+	}
 
 	public int getNbLigne() {
 		return nbLigne;

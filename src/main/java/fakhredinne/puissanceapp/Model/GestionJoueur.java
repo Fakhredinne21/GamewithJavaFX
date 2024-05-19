@@ -1,5 +1,9 @@
 package fakhredinne.puissanceapp.Model;
 
+import fakhredinne.puissanceapp.Model.DAO.DAO;
+import fakhredinne.puissanceapp.Model.DAO.DAOJoueur;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -7,17 +11,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class GestionJoueur {
+	DAOJoueur daoJoueur=new DAOJoueur();
+
 	List<Joueur> list=new ArrayList<>();
-	public GestionJoueur() {
+	public GestionJoueur() throws SQLException, ClassNotFoundException {
 		remplirList();
 	}
-	public void remplirList(){
-		list.add(new Joueur(1,"Joueur 01",10));
-		list.add(new Joueur(2,"Joueur 02",20));
-		list.add(new Joueur(3,"Joueur 03",30));
-		list.add(new Joueur(4,"Joueur 04",10));
-		list.add(new Joueur(5,"Joueur 05",20));
-		list.add(new Joueur(6,"Joueur 06",30));
+	public void remplirList() throws SQLException, ClassNotFoundException {
+		Connection conn= DAO.connection();
+		list=daoJoueur.findAll();
 	}
 	public List<Joueur> listJoueurTrieByScore(){
 		Collections.sort(list);
@@ -88,8 +90,9 @@ public class GestionJoueur {
 	public String toString() {
 		return "GestionJoueur [list=" + list + "]";
 	}
-   	
-	
-	
 
+
+	public void update(Joueur jCourant) throws SQLException, ClassNotFoundException {
+		daoJoueur.update(jCourant);
+	}
 }

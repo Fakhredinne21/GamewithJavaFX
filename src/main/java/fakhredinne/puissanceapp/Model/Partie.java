@@ -1,11 +1,23 @@
 package fakhredinne.puissanceapp.Model;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Partie {
-	private Joueur j1, j2;
+	private int idP;
+	private Joueur j1;
+	private Joueur j2;
+	private Joueur winner;
+
+	public int getIdP() {
+		return idP;
+	}
+
+	public void setIdP(int idP) {
+		this.idP = idP;
+	}
+
 	private ArrayList<Coup> lisCoupJ = new ArrayList();
 	private int nbJetonJ1 = 21;
 	private int nbJetonJ2 = 21;
@@ -13,7 +25,7 @@ public class Partie {
 	private int rolejoueur;
 	private Game game;
 
-	public Partie() {
+	public Partie() throws SQLException, ClassNotFoundException {
 		GestionJoueur gestionJoueur = new GestionJoueur();
 		List<Joueur> listeJoueur = gestionJoueur.getList();
 		j1 = listeJoueur.get(1);
@@ -27,6 +39,18 @@ public class Partie {
 		this.j2 = j2;
 		this.rolejoueur = j1.getId();
 		game = new Game(j1.getId(), j2.getId());
+	}
+
+	public Partie(Joueur j1, Joueur j2, Joueur winner) {
+		this.j1 = j1;
+		this.j2 = j2;
+		this.winner = winner;
+	}
+
+	public Partie(int id, int joueur1, int joueur2, int scorej1, int scorej2) {
+	}
+
+	public Partie(int id, String nom, int score) {
 	}
 
 
@@ -98,5 +122,13 @@ public class Partie {
 
 	public void setJ2(Joueur j2) {
 		this.j2 = j2;
+	}
+
+	public void setWinner(Joueur jCourant) {
+		this.winner = jCourant;
+	}
+
+	public Joueur getWinner() {
+		return winner;
 	}
 }

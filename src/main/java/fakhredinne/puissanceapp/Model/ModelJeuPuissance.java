@@ -1,11 +1,21 @@
 package fakhredinne.puissanceapp.Model;
 
+import fakhredinne.puissanceapp.Model.DAO.DAOPartie;
+
 public class ModelJeuPuissance {
 
     private Joueur j1;
     private Joueur j2;
     private Game puissance;
     private Partie partie;
+    public void createPartie(){
+        DAOPartie daoPartie=new DAOPartie();
+        try {
+            daoPartie.create(partie);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public Partie getPartie() {
         return partie;
